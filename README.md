@@ -199,6 +199,7 @@ cd careguide-medical-support
 
 #### Screenshots (Add at least 3)
 <img width="1841" height="912" alt="image" src="https://github.com/user-attachments/assets/e33d8af1-94ec-4cb2-a2ad-29083301254b" />
+<img width="1380" height="680" alt="image" src="https://github.com/user-attachments/assets/1691d15e-5ebd-4ee4-9ae0-63fa33d838b2" />
 
 #### Diagrams
 
