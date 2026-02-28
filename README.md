@@ -211,7 +211,7 @@ In life-threatening cases, users are advised to call emergency services immediat
 
 
 ## Project Demo
-![demo video](video.mp4).
+![demo video](https://drive.google.com/file/d/1ww_kLiN5psBstx5VjD2RaDR04XmOCpg8/view?usp=drive_link).
 ### Video
 
 ## AI Tools Used (Optional - For Transparency Bonus)
