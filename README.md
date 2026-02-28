@@ -37,67 +37,6 @@ By consolidating emergency guidance, hospital information, and immediate action 
 ## Technical Details
 Key Technical Details
 
-1. Symptom Evaluation System
-
-Each symptom is mapped to:
-
-Severity Level: Low / Medium / High
-
-Recommended Department: Emergency, Cardiology, Pulmonology, etc.
-
-Emergency Message: Alerts for immediate action
-
-The system uses JavaScript logic to process user inputs and determine the severity dynamically.
-
-2. Hospital Filtering & Recommendation
-
-Hospital database is structured with fields: District, City, Hospital Name, Address, Department Availability, Contact Numbers, 24×7 Emergency Status, Google Maps Link.
-
-JavaScript filters hospitals based on:
-
-User-selected District and City
-
-Department availability matching the symptom
-
-Prioritizes hospitals with 24×7 emergency services for high-severity cases
-
-3. Emergency Handling & Actions
-
-High severity cases trigger:
-
-Urgent alert messages
-
-“Call Ambulance 108” integration
-
-Highlighted emergency-ready hospitals
-
-Click-to-call functionality is implemented using HTML <a href="tel:..."> links.
-
-Google Maps redirection uses embedded URLs for direct navigation.
-
-4. User Interface
-
-Built with HTML5, CSS3, and vanilla JavaScript
-
-Clean, responsive layout suitable for mobile and desktop devices
-
-Interactive forms for District, City, and Main Health Concern selection
-
-Dynamic rendering of hospital lists, department recommendations, and emergency alerts
-
-5. Project Goals
-
-Reduce decision-making delay during emergencies
-
-Provide structured symptom-to-department guidance
-
-Enable instant access to hospitals and emergency services
-
-6. Limitations & Disclaimer
-
-CareGuide is a guidance tool, not a replacement for professional medical diagnosis
-
-In life-threatening cases, users are advised to call emergency services immediately
 
 ### Technologies/Components Used
 
@@ -201,26 +140,79 @@ cd careguide-medical-support
 <img width="1841" height="912" alt="image" src="https://github.com/user-attachments/assets/e33d8af1-94ec-4cb2-a2ad-29083301254b" />
 <img width="1380" height="680" alt="image" src="https://github.com/user-attachments/assets/1691d15e-5ebd-4ee4-9ae0-63fa33d838b2" />
 <img width="1613" height="832" alt="image" src="https://github.com/user-attachments/assets/559d17ac-e114-425c-b7d7-1a2496bc3a4c" />
+<img width="1902" height="923" alt="image" src="https://github.com/user-attachments/assets/bcff9c7d-5f14-4965-a654-e05696de1f56" />
 
 #### Diagrams
 
 **System Architecture:**
 <img width="831" height="718" alt="image" src="https://github.com/user-attachments/assets/11b13e7e-ec11-48ac-92dc-8e91cba09a96" />
 **Application Workflow:**
+1. Symptom Evaluation System
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+Each symptom is mapped to:
 
----
+Severity Level: Low / Medium / High
 
+Recommended Department: Emergency, Cardiology, Pulmonology, etc.
+
+Emergency Message: Alerts for immediate action
+
+The system uses JavaScript logic to process user inputs and determine the severity dynamically.
+
+2. Hospital Filtering & Recommendation
+
+Hospital database is structured with fields: District, City, Hospital Name, Address, Department Availability, Contact Numbers, 24×7 Emergency Status, Google Maps Link.
+
+JavaScript filters hospitals based on:
+
+User-selected District and City
+
+Department availability matching the symptom
+
+Prioritizes hospitals with 24×7 emergency services for high-severity cases
+
+3. Emergency Handling & Actions
+
+High severity cases trigger:
+
+Urgent alert messages
+
+“Call Ambulance 108” integration
+
+Highlighted emergency-ready hospitals
+
+Click-to-call functionality is implemented using HTML <a href="tel:..."> links.
+
+Google Maps redirection uses embedded URLs for direct navigation.
+
+4. User Interface
+
+Built with HTML5, CSS3, and vanilla JavaScript
+
+Clean, responsive layout suitable for mobile and desktop devices
+
+Interactive forms for District, City, and Main Health Concern selection
+
+Dynamic rendering of hospital lists, department recommendations, and emergency alerts
+
+5. Project Goals
+
+Reduce decision-making delay during emergencies
+
+Provide structured symptom-to-department guidance
+
+Enable instant access to hospitals and emergency services
+
+6. Limitations & Disclaimer
+
+CareGuide is a guidance tool, not a replacement for professional medical diagnosis
+
+In life-threatening cases, users are advised to call emergency services immediately
 
 
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
-
-*Explain what the video demonstrates - key features, user flow, technical highlights*
 
 ## AI Tools Used (Optional - For Transparency Bonus)
 
