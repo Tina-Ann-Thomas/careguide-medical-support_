@@ -198,22 +198,12 @@ cd careguide-medical-support
 ### For Software:
 
 #### Screenshots (Add at least 3)
-
-<img width="831" height="718" alt="image" src="https://github.com/user-attachments/assets/11b13e7e-ec11-48ac-92dc-8e91cba09a96" />
-
-
-
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1841" height="912" alt="image" src="https://github.com/user-attachments/assets/e33d8af1-94ec-4cb2-a2ad-29083301254b" />
 
 #### Diagrams
 
 **System Architecture:**
-
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
-
+<img width="831" height="718" alt="image" src="https://github.com/user-attachments/assets/11b13e7e-ec11-48ac-92dc-8e91cba09a96" />
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
