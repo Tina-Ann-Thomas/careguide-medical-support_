@@ -199,11 +199,10 @@ cd careguide-medical-support
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="831" height="718" alt="image" src="https://github.com/user-attachments/assets/11b13e7e-ec11-48ac-92dc-8e91cba09a96" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
