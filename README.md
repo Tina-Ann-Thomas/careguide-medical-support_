@@ -3,79 +3,195 @@
 </p>
 
 # [Project Name] 🎯
+careguide-medical-support
 
 ## Basic Details
 
-### Team Name: [Name]
-
-### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+### Team Member
+- Member 1: Tina Ann Thomas
 
 ### Hosted Project Link
+
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+CareGuide – A smart emergency support web application that evaluates symptom severity and suggests the appropriate medical department and nearby hospitals with direct contact and Google Maps integration.When every minute matters, CareGuide provides structured guidance and fast emergency recommendations.
 ### The Problem statement
-[What problem are you solving?]
+In medical emergencies, timely and accurate decisions can save lives. Many people struggle to quickly identify the severity of symptoms, the appropriate medical department, and nearby hospitals with immediate contact options. Existing solutions are often fragmented, requiring users to manually search for hospitals, verify emergency services, and figure out which department to approach, leading to dangerous delays
 
 ### The Solution
-[How are you solving it?]
+CareGuide addresses this problem by providing a smart, symptom-driven web application that:
 
----
+Evaluates the severity of the user’s symptoms (Low / Medium / High)
+
+Suggests the correct medical department
+
+Displays nearby hospitals with 24×7 emergency availability
+
+Provides direct contact numbers and Google Maps navigation
+
+Offers urgent actions like “Call Ambulance 108” for high-risk cases
+
+By consolidating emergency guidance, hospital information, and immediate action prompts, CareGuide reduces decision-making delays and ensures faster, structured support during critical medical situations.
 
 ## Technical Details
+Key Technical Details
+
+1. Symptom Evaluation System
+
+Each symptom is mapped to:
+
+Severity Level: Low / Medium / High
+
+Recommended Department: Emergency, Cardiology, Pulmonology, etc.
+
+Emergency Message: Alerts for immediate action
+
+The system uses JavaScript logic to process user inputs and determine the severity dynamically.
+
+2. Hospital Filtering & Recommendation
+
+Hospital database is structured with fields: District, City, Hospital Name, Address, Department Availability, Contact Numbers, 24×7 Emergency Status, Google Maps Link.
+
+JavaScript filters hospitals based on:
+
+User-selected District and City
+
+Department availability matching the symptom
+
+Prioritizes hospitals with 24×7 emergency services for high-severity cases
+
+3. Emergency Handling & Actions
+
+High severity cases trigger:
+
+Urgent alert messages
+
+“Call Ambulance 108” integration
+
+Highlighted emergency-ready hospitals
+
+Click-to-call functionality is implemented using HTML <a href="tel:..."> links.
+
+Google Maps redirection uses embedded URLs for direct navigation.
+
+4. User Interface
+
+Built with HTML5, CSS3, and vanilla JavaScript
+
+Clean, responsive layout suitable for mobile and desktop devices
+
+Interactive forms for District, City, and Main Health Concern selection
+
+Dynamic rendering of hospital lists, department recommendations, and emergency alerts
+
+5. Project Goals
+
+Reduce decision-making delay during emergencies
+
+Provide structured symptom-to-department guidance
+
+Enable instant access to hospitals and emergency services
+
+6. Limitations & Disclaimer
+
+CareGuide is a guidance tool, not a replacement for professional medical diagnosis
+
+In life-threatening cases, users are advised to call emergency services immediately
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
+- Languages used: [html,CSS,Javascript]
+- Tools used: [e.g., VS Code, Git, ]
 
 ## Features
+# Key Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+Symptom-based emergency level detection
 
----
+Department recommendation system
+
+District and city-based hospital filtering
+
+24×7 emergency identification
+
+Click-to-call integration
+
+Direct Google Maps redirection
+
+Clean and responsive UI
 
 ## Implementation
+# How It Works
+1. Symptom Configuration System
+
+Each symptom is mapped to:
+
+Severity level (Low / Medium / High)
+
+Required medical department
+
+Emergency message
+
+Example:
+
+Breathing Difficulty → High Severity → Emergency Department
+
+2. Hospital Filtering Logic
+
+The system filters hospitals based on:
+
+Selected district
+
+Selected city
+
+Required department availability
+
+If severity is High, hospitals with 24×7 emergency services are prioritized.
+
+3️. Emergency Handling
+
+For high severity cases:
+
+Displays urgent alert
+
+Shows "Call Ambulance 108 Immediately"
+
+Highlights emergency-ready hospitals
+
+Hospital Database
+
+The system includes structured hospital data across multiple districts in Kerala, including:
+
+District
+
+City
+
+Hospital Name
+
+Address
+
+Emergency Availability
+
+Main Contact Number
+
+Department-wise Contact Numbers
+
+Google Maps Link
+
 
 ### For Software:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+git clone https://github.com/tina-ann-thomas/careguide-medical-support.git
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+cd careguide-medical-support
 ```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
@@ -106,257 +222,7 @@ List the key features of your project:
 
 ---
 
-### For Hardware:
 
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
----
-
-## Additional Documentation
-
-### For Web Projects with Backend:
-
-#### API Documentation
-
-**Base URL:** `https://api.yourproject.com`
-
-##### Endpoints
-
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
-
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
-
-[Add more endpoints as needed...]
-
----
-
-### For Mobile Apps:
-
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
-
-#### Installation Guide
-
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
-
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
-
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
-
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
-
----
-
-### For Hardware Projects:
-
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
-
-### For Scripts/CLI Tools:
-
-#### Command Reference
-
-**Basic Usage:**
-```bash
-python script.py [options] [arguments]
-```
-
-**Available Commands:**
-- `command1 [args]` - Description of what command1 does
-- `command2 [args]` - Description of what command2 does
-- `command3 [args]` - Description of what command3 does
-
-**Options:**
-- `-h, --help` - Show help message and exit
-- `-v, --verbose` - Enable verbose output
-- `-o, --output FILE` - Specify output file path
-- `-c, --config FILE` - Specify configuration file
-- `--version` - Show version information
-
-**Examples:**
-
-```bash
-# Example 1: Basic usage
-python script.py input.txt
-
-# Example 2: With verbose output
-python script.py -v input.txt
-
-# Example 3: Specify output file
-python script.py -o output.txt input.txt
-
-# Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
-```
-
-#### Demo Output
-
-**Example 1: Basic Processing**
-
-**Input:**
-```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
-```
-
-**Command:**
-```bash
-python script.py sample.txt
-```
-
-**Output:**
-```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
-```
-
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
-
----
 
 ## Project Demo
 
@@ -364,11 +230,6 @@ python script.py -v --format json data.json
 [Add your demo video link here - YouTube, Google Drive, etc.]
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
-
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
-
----
 
 ## AI Tools Used (Optional - For Transparency Bonus)
 
